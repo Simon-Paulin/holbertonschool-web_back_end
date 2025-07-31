@@ -3,8 +3,7 @@
 add float floor
 """
 
-
-def floor(n: float) -> None:
+def floor(n: float) -> int:
     '''
     add float
     '''
