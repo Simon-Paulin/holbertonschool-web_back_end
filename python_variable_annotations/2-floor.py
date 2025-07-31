@@ -9,4 +9,4 @@ def floor(n: float) -> int:
     '''
     add float
     '''
-    return n
+    return math_floor(n)
