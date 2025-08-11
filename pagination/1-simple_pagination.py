@@ -4,7 +4,7 @@ import csv
 from typing import List, Tuple
 
 
-def index_range(page: int, page_size: int) -> tuple:
+def index_range(page: int, page_size: int) -> tuple[int, int]:
     """Simple helper function """
     st_index = (page - 1) * page_size
     end_index = page * page_size
@@ -34,8 +34,8 @@ class Server:
         assert isinstance(page_size, int) and page_size > 0
 
         data = self.dataset()
-        start, end = index_range(page, page_size)
+        st_index, end_index = index_range(page, page_size)
         
-        if start >= len(data):
+        if st_index >= len(data):
             return []
-        return data[start:end]
+        return data[st_index:end_index]
