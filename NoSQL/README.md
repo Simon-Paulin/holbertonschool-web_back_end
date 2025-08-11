@@ -30,3 +30,5 @@ Python Scripts
     All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
     All your functions should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)'
     Your code should not be executed when imported (by using if __name__ == "__main__":)
+
+    I USED DOCKER 
