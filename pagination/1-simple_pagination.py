@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Simple helper function """
 import csv
 from typing import List, Tuple
 
