@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Simple helper function """
 import csv
-from typing import List
+from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> tuple:
