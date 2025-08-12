@@ -28,12 +28,13 @@ run6:
 run7:
 	cat 7-delete | docker compose exec -T mongo mongo my_db
 
+
 py8:
-	docker compose exec -T py python 8-all.py
+	docker compose run --rm py python3 8-main.py
 
 py9:
 	docker compose exec -T py python 9-insert_school.py
-
+	
 py10:
 	docker compose exec -T py python 10-update_topics.py
 
