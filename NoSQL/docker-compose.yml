@@ -18,4 +18,4 @@ services:
       - PYTHONUNBUFFERED=1
     volumes:
       - ./:/work:ro
-    command: bash -lc "pip install -r requirements.txt && pycodestyle --version && sleep infinity"
+    command: bash -lc "pip install -r requirements.txt || true && pycodestyle --version || true && tail -f /dev/null"
